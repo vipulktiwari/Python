@@ -1,7 +1,7 @@
 import functools
 
 def add_decorator(func):
-	# functools.wraps reservs the function name for helper module
+	# functools.wraps reserves the function name for helper module
 	@functools.wraps(func)
 	def wrapper(*args, **kwargs):
 		print('start')
